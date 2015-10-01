@@ -27,7 +27,7 @@ module EmberCLI
 
     def install_dependencies
       exec "#{bundler_path} install" if gemfile_path.exist?
-      exec "#{npm_path} install --unsafe-perm=true
+      exec "#{npm_path} install --unsafe-perm=true"
     end
 
     def run
